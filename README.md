@@ -13,6 +13,6 @@ The goal of this project is to create a **responsive, customizable news aggregat
 - **TypeScript** — Strongly typed JavaScript  
 - **Docker** — Containerized deployment  
 - **Axios / Fetch API** — API calls  
-- **Tailwind CSS** (or preferred CSS framework) — Styling  
+- **Tailwind CSS** — Styling  
 - **React Router** — Navigation  
 - **Vite / CRA** — Build tool  

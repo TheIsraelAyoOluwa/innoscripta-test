@@ -96,7 +96,7 @@ export const getAllTheNewsApiData = async (data: TFilterProps) => {
   }
 };
 
-export const getAllTheNewsApiSourceData = async (data: TFilterProps) => {
+export const getAllTheNewsApiSourceData = async () => {
   try {
     const response = await axios.get<TTheNewsApiSourceResponse>(
       `https://api.thenewsapi.com/v1/news/sources?api_token=InxA1trnkKzZICOCi82u3775nbhIJQKLuh51ATSq&language=en

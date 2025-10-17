@@ -29,7 +29,7 @@ export const NewsCard: React.FC<NewsCardProps> = ({
   return (
     <div
       key={`news-index-${title}-${index}`}
-      className="w-[350px] h-[350px] border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-white"
+      className="xl:w-[350px] w-[100%] h-[350px] border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-white"
     >
       <div className="h-[200px] w-full">
         <img

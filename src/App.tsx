@@ -82,7 +82,7 @@ function App() {
 
   const { data: newsDataSource2, isFetching: fetchingSource2 } = useQuery({
     queryKey: [QUERY_KEYS.THE_NEWS_API_SOURCE, data.category],
-    queryFn: () => getAllTheNewsApiSourceData(data),
+    queryFn: () => getAllTheNewsApiSourceData(),
   });
 
   const sourceDone = [...(newsDataSource1 ?? []), ...(newsDataSource2 ?? [])];
@@ -114,8 +114,8 @@ function App() {
       <Header onRefresh={refresh} />
 
       <div className="w-[80%] mx-auto py-6 space-y-6">
-        <div className="flex items-center space-x-4">
-          <div className="border-[1px] h-[50px] w-[50%] px-4 flex items-center rounded-3xl">
+        <div className="flex md:flex-row flex-col items-center space-x-4 space-y-4  md:space-y-0">
+          <div className="border-[1px] h-[50px] md:w-[50%] w-[100%] px-4 flex items-center rounded-3xl ">
             <input
               type="text"
               value={data.query}
@@ -124,7 +124,7 @@ function App() {
             />
           </div>
 
-          <Button type="button" onClick={handleSearchFilters}>
+          <Button type="button" className="w-[100%] md:w-auto  " onClick={handleSearchFilters}>
             Fetch data Again
           </Button>
         </div>

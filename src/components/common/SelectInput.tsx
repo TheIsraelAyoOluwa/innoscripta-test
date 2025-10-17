@@ -12,8 +12,8 @@ const SelectInput: FC<SelectInputProps> = ({
   placeholder,
 }) => {
   return (
-    <div>
-      {label && <label className="text-sm text-neutral-900 !pb-4 font-medium">{label}</label>}
+    <div className="space-y-0.5 flex flex-col">
+      {label && <label className="text-sm text-neutral-900 font-medium">{label}</label>}
 
       <Select
         onValueChange={(val: string) => {

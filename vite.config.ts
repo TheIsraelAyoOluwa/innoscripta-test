@@ -20,4 +20,12 @@ export default defineConfig({
       },
     },
   },
+  test: {
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: './src/config/testConfig.ts', 
+    coverage: {
+      reporter: ['text', 'json', 'html'],
+    },
+  },
 });
